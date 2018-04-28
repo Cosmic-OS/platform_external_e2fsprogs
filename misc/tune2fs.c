@@ -75,7 +75,7 @@ extern int ask_yn(const char *string, int def);
 #ifndef BUILD_AS_LIB
 const char *program_name = "tune2fs";
 #else
-extern const char *program_name;
+const char* program_name = "";
 #endif
 char *device_name;
 char *new_label, *new_last_mounted, *new_UUID;
